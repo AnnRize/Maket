@@ -1,0 +1,114 @@
+.header {
+   position: relative;
+   max-width: var(--header-container);
+   margin: 60px auto 0;
+   padding: 0 5px;
+
+   header {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+      justify-content: space-around;
+
+      .logo {
+         font-size: 24px;
+         font-weight: 700;
+         line-height: 33px;
+         letter-spacing: 0.01em;
+      }
+
+      nav {
+         > ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            list-style-type: none;
+
+            > li {
+               font-size: 18px;
+               font-weight: 600;
+               line-height: 25px;
+               letter-spacing: 0px;
+            }
+         }
+      }
+
+      .search {
+         display: flex;
+         align-items: center;
+         img {
+            display: block;
+            margin-right: 15px;
+         }
+         span {
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 23px;
+            letter-spacing: 0px;
+         }
+      }
+   }
+
+   .title__container {
+      margin: 200px auto calc(730px - 120px);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .socials {
+         writing-mode: vertical-lr;
+         display: flex;
+         p {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 25px;
+            letter-spacing: 0px;
+         }
+         span {
+            > img {
+               margin-top: 20px;
+            }
+         }
+      }
+
+      .title {
+         margin-inline: auto;
+         max-width: max-content;
+         display: flex;
+         flex-direction: column;
+
+         h1 {
+            font-size: clamp(60px, 10vw, 96px);
+            font-weight: 700;
+            line-height: clamp(80px, 10vw, 100px);
+            letter-spacing: 0em;
+
+            span {
+               font-size: clamp(50px, 10vw, 88px);
+               font-weight: 400;
+               line-height: clamp(80px, 10vw, 100px);
+               letter-spacing: 0em;
+            }
+         }
+
+         .scrollDown {
+            margin-top: 126px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .scroll {
+               font-size: 18px;
+               font-weight: 600;
+               line-height: 25px;
+               letter-spacing: 0px;
+               margin-right: 10px;
+            }
+
+            img {
+               display: block;
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,80 @@
+@keyframes fade {
+   from {
+   }
+   to {
+      opacity: 1;
+   }
+}
+
+.inView {
+   animation: fade 1s ease-in-out 0s 1 normal forwards;
+}
+
+.container {
+   // width: 100%;
+   opacity: 0;
+   background: url("/bg2.png") no-repeat;
+   background-size: cover;
+   background-position: center;
+   padding: 460px 40px 25px;
+
+   .arrows {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      button {
+         background: transparent;
+      }
+      .left_button {
+         img {
+            display: block;
+         }
+      }
+      .right_button {
+         img {
+            display: block;
+         }
+      }
+   }
+
+   .info {
+      text-align: center;
+      max-width: 934px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 25px;
+      margin: 25px auto 0;
+
+      h2 {
+         font-size: clamp(40px, 10vw, 64px);
+         font-weight: 700;
+         line-height: clamp(60px, 10vw, 87px);
+         letter-spacing: 0em;
+      }
+
+      .description {
+         font-size: 18px;
+         font-weight: 600;
+         line-height: 32px;
+         letter-spacing: 0px;
+      }
+
+      .link {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         a {
+            color: var(--accent-color);
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 25px;
+            letter-spacing: 0px;
+            margin-right: 10px;
+         }
+         img {
+            display: inline-block;
+         }
+      }
+   }
+}

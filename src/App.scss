@@ -1,0 +1,25 @@
+.bg {
+   position: absolute;
+   top: 0;
+   z-index: -1;
+
+   height: 1500px;
+   width: 100%;
+   background: url("/bg.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   box-shadow:
+      inset 0px 150px 400px 0px rgba(0, 0, 0, 1),
+      inset 0px -200px 100px 0px rgba(0, 0, 0, 1);
+}
+
+main {
+   max-width: var(--main-container);
+   margin: 0 auto;
+   padding: 0 5px;
+   display: flex;
+   flex-direction: column;
+   row-gap: 250px;
+   margin-bottom: 250px;
+}
